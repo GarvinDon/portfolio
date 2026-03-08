@@ -41,12 +41,12 @@ export default function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.4 }}
-            whileHover={{ y: -4, scale: 1.01 }}
-            className="group rounded-xl border border-neutral-100 bg-white p-6 shadow-card"
+            whileHover={{ y: -6, scale: 1.01, transition: { type: 'spring', stiffness: 260, damping: 18 } }}
+            className="group card rounded-xl border border-neutral-100 bg-white p-6 shadow-card"
           >
             <div className="flex items-center justify-between">
               <div className="text-lg font-semibold">{p.title}</div>
-              <span className="text-xs px-2 py-1 rounded bg-neutral-100">{p.type}</span>
+              <span className="chip text-xs px-2 py-1 rounded bg-neutral-100">{p.type}</span>
             </div>
             <p className="mt-3 text-sm text-neutral-700">{p.summary}</p>
             <div className="mt-4">
@@ -69,7 +69,7 @@ export default function Projects() {
               {p.tags.map((t) => (
                 <span
                   key={t}
-                  className="text-xs px-2 py-1 rounded-full bg-neutral-100 group-hover:bg-primary/10 transition-colors"
+                  className="chip text-xs px-2 py-1 rounded-full bg-neutral-100 group-hover:bg-primary/10 transition-colors"
                 >
                   {t}
                 </span>
