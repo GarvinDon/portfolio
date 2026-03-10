@@ -3,10 +3,10 @@ import Section from './Section'
 import { motion } from 'framer-motion'
 
 const items = [
-  { time: '2022 - 至今', company: '招商银行', role: '体验设计师' },
-  { time: '2021 - 2022', company: '小鹅通', role: '交互设计师' },
-  { time: '2018 - 2020', company: '极飞科技', role: '交互设计师' },
-  { time: '2016 - 2018', company: '货宝宝', role: '产品设计实习' }
+  { time: 'YYYY - 至今', company: '公司名称（占位）', role: '岗位名称（占位）' },
+  { time: 'YYYY - YYYY', company: '公司名称（占位）', role: '岗位名称（占位）' },
+  { time: 'YYYY - YYYY', company: '公司名称（占位）', role: '岗位名称（占位）' },
+  { time: 'YYYY - YYYY', company: '公司名称（占位）', role: '岗位名称（占位）' }
 ]
 
 export default function Experience() {

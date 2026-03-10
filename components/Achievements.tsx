@@ -3,9 +3,9 @@ import Section from './Section'
 import { motion } from 'framer-motion'
 
 const items = [
-  { title: '小鹅圈子 DAU 提升 90%' },
-  { title: '极飞维修系统 处理效率提升 13 倍' },
-  { title: '组件库建设 设计效率提升 50%' }
+  { title: '某社群产品 DAU 提升 90%（占位）' },
+  { title: '某维修系统 处理效率提升 13 倍（占位）' },
+  { title: '组件库建设 设计效率提升 50%（占位）' }
 ]
 
 export default function Achievements() {
